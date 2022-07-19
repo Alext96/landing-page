@@ -158,6 +158,9 @@ color: #1f2937;
            margin-top: 1em;
            font-size: 18px;
            color: #E5E7EB;
+           text-decoration: none;
+           padding: 0 6px;
+           position: relative;
       }
 
       .heroTitle{
@@ -219,7 +222,27 @@ color: #1f2937;
         text-shadow: 0 0 5px #0460D9, 0 0 12px #61D9F4, 0 0 20px #07F2C5;
         color: white;
         transform: scale(1.05);
-        box-shadow: 0 0 30px #07F2C5;;
+        box-shadow: 0 0 30px #07F2C5;
+    }
+
+.heroSecondary:hover{
+    text-shadow: 0 0 5px rgb(59, 210, 230), 0 0 12px rgb(59, 210, 230), 0 0 20px rgb(59, 210, 230);
+    color: white;
+}
+
+    .heroSecondary:after{
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(to right, #07F2C5,#61D9F4, #0460D9);
+    height: 2px;
+    width: 0%;
+    left: 0;
+    bottom: -2px;
+    transition: 0.3s;
+    }
+
+    .heroSecondary:hover:after{
+        width: 100%;
     }
 
     /* Color Theme Swatches in Hex */
