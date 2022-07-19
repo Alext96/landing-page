@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@font-face
+{
+    font-family: 'Izayoi Monospaced';
+    src: url('./resources/IzayoiMonospaced.ttf') format('truetype');
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Izayoi Monospaced', sans-serif;
+}
+
+
 .heroMain{
     font-size: 48px;
     font-weight: 800;
@@ -33,3 +49,57 @@ font-size: 36px;
 font-style: italic;
 color: #1f2937;
 }
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    background-color: rgba(0,0,0,0.9);
+  }
+
+  .rightBar{
+      position: relative;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 2vw;
+      width: 20em;
+  }
+
+  .rightBar li{
+    display: inline;
+    }
+    li a{
+        color: gray;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 10px;
+      }
+
+
+      .videoContainer {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        filter: brightness(1.2);
+        z-index: -2;
+      }
+      .videoContainer video {
+        /* Make video to at least 100% wide and tall */
+        min-width: 100%; 
+        min-height: 100%; 
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
