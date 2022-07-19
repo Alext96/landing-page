@@ -9,20 +9,10 @@
 body {
   height: 100vh;
   margin: 0;
-  overflow: hidden;
+  overflow: auto;
   font-family: 'Izayoi Monospaced', sans-serif;
 }
 
-
-.heroMain{
-    font-size: 48px;
-    font-weight: 800;
-    color: #F9FAF8;
-}
-.heroSecondary{
-    font-size: 18px;
-    color: #E5E7EB;
-}
 .headerLogo{
     font-size: 24px;
     color: #F9FAF8;
@@ -103,3 +93,145 @@ color: #1f2937;
         left: 50%;
         transform: translate(-50%,-50%);
       }
+
+      .logoContainer{
+         margin: 0.7em 0 0.7em 2.5vw;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+         width: 8.8em;
+         text-decoration: none;
+      }
+      .logoImageContainer{
+          display: flex;
+          align-items: center;
+          margin-right: 0.5em;
+      }
+
+      .logoImage{
+          width: 5em;
+      }
+
+      .heroContainer{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          flex-direction: row;
+          background-color: rgba(0, 0, 0, 0.7);
+          box-shadow: 0 0 2em rgb(69 69 69);
+          border-radius: 1em;
+          width: 85%;
+          height: 50%;
+          margin: 12em 0 auto 6em;
+          position: relative;
+      }
+
+      .heroImageContainer{
+        display: flex;
+        align-items: center;
+        margin-right: 0.5em;
+
+      }
+
+      .heroImage{
+          width: 26em;
+      }
+
+      .break{
+          flex-basis: 100%;
+          height: 0;
+      }
+
+      .heroLeft{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-content: center;
+          margin: 3em 2em 3em 5em;
+      }
+
+      .heroSecondary{
+          text-align: center;
+          line-height: 1.4em;
+           margin-top: 1em;
+           font-size: 18px;
+           color: #E5E7EB;
+      }
+
+      .heroTitle{
+        font-size: 48px;
+        font-weight: 800;
+        color: #F9FAF8;
+        text-shadow: 0 0 0.8em rgb(255 255 255);
+    }
+
+    .subBackground{
+         background: linear-gradient(#AA02F0, #310261); /*,#0460D9,#61D9F4,#07F2C5 */
+        margin-top: 20em;
+    }
+
+    .subHeader{
+        font-size: 2em;
+        font-weight: 800;
+        color: #F9FAF8;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin: 0 0 1.5em 0;
+    }
+
+    .subInfoContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 2em;
+    }
+
+    .subContent{
+        padding-top: 1em;
+    }
+
+    .membersContainer .imgMember{
+    width: 12em;
+    height: 14em;
+    object-fit: cover;
+    border: 0.3em solid rgb(255, 255, 255);
+    border-radius: 1.5em;
+    box-shadow: 0 10px 30px black;
+    transition: 0.3s;
+    margin: -0.5em -1em -1em -1em;
+    }
+
+    .memberSubtext{
+        text-align: center;
+        color: white;
+        font-size: 1.7em;
+        margin: 1em 0 1em 0;
+        font-family: sans-serif;
+        z-index: 2;
+    }
+
+    .imgMember:hover{
+        text-shadow: 0 0 5px #0460D9, 0 0 12px #61D9F4, 0 0 20px #07F2C5;
+        color: white;
+        transform: scale(1.05);
+        box-shadow: 0 0 30px #07F2C5;;
+    }
+
+    /* Color Theme Swatches in Hex */
+.KDA-1-hex { color: #AA02F0; }
+.KDA-2-hex { color: #310261; }
+.KDA-3-hex { color: #0460D9; }
+.KDA-4-hex { color: #61D9F4; }
+.KDA-5-hex { color: #07F2C5; }
+
+/* Color Theme Swatches in RGBA */
+.KDA-1-rgba { color: rgba(170, 2, 239, 1); }
+.KDA-2-rgba { color: rgba(49, 2, 96, 1); }
+.KDA-3-rgba { color: rgba(4, 96, 216, 1); }
+.KDA-4-rgba { color: rgba(96, 216, 244, 1); }
+.KDA-5-rgba { color: rgba(7, 242, 196, 1); }
