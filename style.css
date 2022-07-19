@@ -1,0 +1,35 @@
+.heroMain{
+    font-size: 48px;
+    font-weight: 800;
+    color: #F9FAF8;
+}
+.heroSecondary{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+.headerLogo{
+    font-size: 24px;
+    color: #F9FAF8;
+}
+.darkBackground{
+    background-color: #1f2937;
+}
+.colorBlue{
+    color: #3882f6;
+}
+
+.headerInfo{
+    font-size: 36px;
+    font-weight: 800;
+    color: #1f2937;
+}
+
+.quoteSection{
+ background-color: #e5e7eb;
+}
+
+.quoteText{
+font-size: 36px;
+font-style: italic;
+color: #1f2937;
+}
